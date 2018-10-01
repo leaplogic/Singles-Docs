@@ -1,6 +1,7 @@
 module.exports = {
     title: 'Craft Singles',
     description: 'Documentation for quick site spinup using Singles.',
+    base: '/Singles-Docs/',
     themeConfig: {
         nav: [
             {
