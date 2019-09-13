@@ -32,7 +32,6 @@ module.exports = {
                     collapsable: false,
                     children: [
                         '/templates/text.md',
-                        '/templates/links.md',
                         '/templates/callout.md',
                         '/templates/image.md',
                         '/templates/table.md',
@@ -40,7 +39,7 @@ module.exports = {
                         '/templates/features.md',
                         '/templates/gallery.md',
                         '/templates/grid.md',
-                        '/templates/testimonials.md'
+                        '/templates/accordion.md'
                     ]
                 }
             ]
