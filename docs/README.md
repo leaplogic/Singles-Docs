@@ -43,7 +43,7 @@ Since we are using Craft CMS 3 you will need to add a random generated user key 
     DB_PASSWORD="secret"
     DB_DATABASE="app"
     DB_SCHEMA="public"
-    DB_TABLE_PREFIX=""
+    DB_TABLE_PREFIX="craft"
     DB_PORT="3306"
 
     ENVIRONMENT="dev"
@@ -63,7 +63,7 @@ In production you will need to add an `.env` file to the root folder of the site
     DB_PASSWORD="database-password"
     DB_DATABASE="database-name"
     DB_SCHEMA="public"
-    DB_TABLE_PREFIX=""
+    DB_TABLE_PREFIX="craft"
     DB_PORT="3306"
     // 'staging' or 'production'
     ENVIRONMENT="production"
