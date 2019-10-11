@@ -11,6 +11,13 @@ module.exports = {
             {
                 text: 'Template Guide',
                 link: '/templates/'
+            },
+            {
+                text: 'FAQs',
+                items: [
+                    { text: 'Craft CMS 2', link: '/faq/craft2/' },
+                    { text: 'Craft CMS 3', link: '/faq/craft3/' },
+                ]
             }
         ],
         sidebar: {
