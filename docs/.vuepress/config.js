@@ -1,55 +1,43 @@
 module.exports = {
     title: 'Craft Singles',
     description: 'Documentation for quick site spinup using Singles.',
-    base: '/Singles-Docs/',
+    base: '/',
     themeConfig: {
+        logo: 'http://singles.leaplogic.com/uploads/ll-cheddar.png',
         nav: [
             {
-              text: 'Style Guide',
-              link: '/styles/'
+              text: 'Home',
+              link: '/'
             },
             {
-                text: 'Template Guide',
-                link: '/templates/'
+                text: 'Installation',
+                link: '/installation/'
             },
             {
-                text: 'FAQs',
+                text: 'Core Concepts',
                 items: [
-                    { text: 'Craft CMS 2', link: '/faq/craft2/' },
-                    { text: 'Craft CMS 3', link: '/faq/craft3/' },
+                    { text: 'Styles', link: '/styles/' },
+                    { text: 'Components', link: '/components/' },
+                    { text: 'Templating', link: '/templates/' },
+                    { text: 'Plugins', link: '/plugins/' },
                 ]
-            }
+            },
+            {
+                text: 'FAQ',
+                items: [
+                    { text: 'Singles v3 (latest)', link: '/faq/craft3/' },
+                    { text: 'Singles v2', link: '/faq/craft2/' },
+                ]
+            },
+            {
+                text: 'More',
+                items: [
+                    { text: 'Docs Repo', link: 'https://github.com/leaplogic/singles-docs' },
+                    { text: 'Singles Repo', link: 'https://github.com/leaplogic/singles/tree/v3' },
+                    { text: 'Singles Demo', link: 'http://singles.leaplogic.com' },
+                ]
+            },
         ],
-        sidebar: {
-            '/styles/': [
-                '/styles/',
-                {
-                    title: 'Basics',
-                    collapsable: false,
-                    children: [
-                        '/styles/utilities.md'
-                    ]
-
-                }
-            ],
-            '/templates/': [
-                '/templates/',
-                {
-                    title: 'Page Content',
-                    collapsable: false,
-                    children: [
-                        '/templates/text.md',
-                        '/templates/callout.md',
-                        '/templates/image.md',
-                        '/templates/table.md',
-                        '/templates/form.md',
-                        '/templates/features.md',
-                        '/templates/gallery.md',
-                        '/templates/grid.md',
-                        '/templates/accordion.md'
-                    ]
-                }
-            ]
-        }
+        sidebar: 'auto'
     }
 }
