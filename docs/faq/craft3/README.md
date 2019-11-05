@@ -1,10 +1,9 @@
 ---
-title: FAQ
-sidebar: auto
+title: FAQ (latest)
 ---
 
-# Frequently Asked Questions
-This section covers frequently asked questions and problems for [Singles v3](https://github.com/leaplogic/singles/tree/v3). Singles v2 FAQ can be found [here](/faq/craft2/).
+# Common Issues & Workarounds
+This section covers common issues and workarounds for [Singles v3](https://github.com/leaplogic/singles/tree/v3). Singles v2 FAQ can be found [here](/faq/craft2/).
 
 ## Docker Build Errors
 needs content
