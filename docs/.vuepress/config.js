@@ -1,7 +1,7 @@
 module.exports = {
     title: 'Craft Singles',
     description: 'Documentation for quick site spinup using Singles.',
-    base: '/singles-docs/',
+    base: '/Singles-Docs/',
     themeConfig: {
         logo: 'http://singles.leaplogic.com/uploads/ll-cheddar.png',
         nav: [
