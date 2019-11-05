@@ -13,24 +13,24 @@ By default, `docker-compose.yml` configures the web server and MySQL services to
 
 First, let's look at a snippet of `docker-compose.yml` where the ports are being set.
 
-``` yml{7,18}
+``` yml{6,17}
 nginx:
-        build: "./docker/nginx"
-        networks:
-            - llnet
-        ports:
-            - 80:80
-        volumes:
-            - ./docker/nginx/nginx.conf:/etc/nginx/nginx.conf
-            - ./log:/var/log/nginx
-            - ./web:/var/www/web:cached
+    build: "./docker/nginx"
+    networks:
+        - llnet
+    ports:
+        - 80:80
+    volumes:
+        - ./docker/nginx/nginx.conf:/etc/nginx/nginx.conf
+        - ./log:/var/log/nginx
+        - ./web:/var/www/web:cached
 
-    mysql-server:
-        image: mysql:5.7
-        networks:
-            - llnet
-        ports:
-            - "3306:3306"
+mysql-server:
+    image: mysql:5.7
+    networks:
+        - llnet
+    ports:
+        - "3306:3306"
 ```
 
 To use a different port locally, change the first number in the port assignment from
