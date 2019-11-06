@@ -44,6 +44,10 @@ docker-compose up --build -d
 
 This will build the instances using the respective Dockerfiles for each one. If all of the containers build successfully, it should also start up the containers.
 
+::: warning BE ADVISED
+The ports `3306` and `80` are default ports for MySQL and most web servers. These ports can often be in use by other local programs. Check out the [FAQ](/faq/craft3/#ports-in-use) if you're encountering problems with your ports.
+:::
+
 ### Starting up containers 
 To start the containers, run
 ```bash
@@ -52,7 +56,7 @@ docker-compose up -d
 The `-d` argument is optional. It starts the container in detached mode which allows the containers to run in the background.
 
 ::: warning NOTE
-You may need to run twice after first build
+Sometimes, not all of the containers successfully start. You can check by running `docker ps`. To fix it, run the above command again.
 :::
 
 
@@ -95,7 +99,7 @@ MYSQL_PASSWORD=secret
 ### Update Craft Database Config
 Edit the `.env.php` file in the root of the project. Leave the `ENVIRONMENT` as `dev` for local development.  The database credentials are the same defaults as the Docker `.env` file defaults out of the box.
 
-Since we are using Craft CMS 3 you will need to add a random generated user key with letters and numbers.
+Since we are using Craft CMS 3, you will need to add a random generated user key with letters and numbers. Read more about it in the [Craft Docs](https://docs.craftcms.com/v3/installation.html#step-3-set-a-security-key).
 
 ```php
 DB_DRIVER="mysql"
@@ -116,9 +120,6 @@ SECURITY_KEY="########################"
 `mysql-server` represents the Docker MYSQL container name that  what is used as the automatic DNS resolved name. Read more in the [Docker docs](https://docs.docker.com/network/bridge/).
 :::
 
-::: danger BE ADVISED
-The port `3306` is the default port for MySQL and is often is in use by other local programs. Check out the [FAQ](/faq/craft3/#ports-in-use) if you're encountering problems with your ports.
-:::
 
 ## Production Environment
 This section covers how to set up Singles in a production environment. It's assumed that this environment is unix-based.
