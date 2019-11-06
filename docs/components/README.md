@@ -1,14 +1,24 @@
-## Components
+# Components
 needs content
+- basic explanation of the components
+- for each component, explain purpose, conventions, how to extend, and limitations
+- build tasks
+- bundling strategy
+- how to create new components
+- how to add existing components
 
-## Accordion.js
 
-## Forms.js
 
-## Modals.js
+## Base Components
 
-## Nav.js
+### Accordion.js
 
-## Search.js
+### Forms.js
 
-## Sliders.js
+### Modals.js
+
+### Nav.js
+
+### Search.js
+
+### Sliders.js

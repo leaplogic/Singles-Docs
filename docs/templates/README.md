@@ -1,6 +1,14 @@
 # Templating
 These are the base [Entry Type](https://docs.craftcms.com/v3/sections-and-entries.html#entry-types) templates developed as a starting point for the homepage and interior pages.
 
+needs content
+- All conventions that are heavily relied on and how they can be extended
+- Known limitations caused by the conventions
+- Define custom macros
+- Define plugin-dependent templates and their purpose
+- Define any conventions that are used with different types or variables within craft
+
+
 ## Interior
 This *Entry Type* is for the base interior or subpage. This template has the content builder based on the Neo Plugin.
 
